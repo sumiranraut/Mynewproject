@@ -6,7 +6,8 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(features="FeatureFiles",tags="@Searchbox",
-glue= {"StepDefinition"})
+glue= {"StepDefinition"},
+plugin= {"pretty","json:target/cucumber.json"})
 public class LoginRunner {
 
 }
